@@ -1,0 +1,256 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Ana Bravo}{}
+
+\position{MPH Biostatistics Student}
+\address{Miami, Florida}
+
+\email{\href{mailto:anbravo@fiu.edu}{\nolinkurl{anbravo@fiu.edu}}}
+\homepage{sunlab.fiu.edu}
+\github{anbrav0}
+\linkedin{anabravobiostats}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{Specialized working with adolescent substance use, biospecimen
+data collection, R programming, and student education. More
+specifically, I am interested in looking at different trajectories
+adolescents take when experimenting with substances and student academic
+success.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {April 2023}
+    {Ana Bravo~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{MPH - Biostatistics}{Florida International University}{Florida, USA}{2021-Present}{\begin{cvitems}
+\item Focus on data wrangling and substance use
+\end{cvitems}}
+    \cventry{BA - Psychology}{Florida International University}{Florida, USA}{2016-2018}{\begin{cvitems}
+\item GPA: 4.0
+\end{cvitems}}
+    \cventry{AA - Psychology}{Miami Dade College}{Florida, USA}{2014-2016}{\begin{cvitems}
+\item GPA: 4.0
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\begin{cventries}
+    \cventry{Senior Research Assistant, Primary Investigator: Raul Gonzalez, Ph.D.}{Substance Use Neuropsychology Lab}{Florida International University}{Feb 2020 - Present}{\begin{cvitems}
+\item Conduct assessment for the longitudinal Adolescent Brain Cognitive Development (ABCD) Study under the direct supervision of Dr. Raul Gonzalez.
+\item Administer clinical interviews (e.g., KSADS, PPS, Substance use questionnaires, Alcohol, Nicotine and Marijuana TLFB measurements to school aged children for a ten-year longitudinal study.
+\item Administer and score neuropsychological and neuro-behavioral tasks (RAVL-T, NIH Tool Box, Emotional Stroop Task) with ABCD participants.
+\item Conduct suicide-risk assessment under the supervision of an onsite clinician during protocol visits and conduct suicidality follow up with parents.
+\item Conduct Time Line Follow Back Interview (TLFB) to obtain youth estimates of past year marijuana, cigarette and other substance use.
+\item Collection of biospeciment domain samples while conducting onsite interview such as DNA saliva sample, Blood, Urine and Drager breathalyzer.
+\end{cvitems}}
+    \cventry{Research Assistant, Primary Investigator: Jeremy Pettit, Ph.D.}{Child Anxiety and Phobia Program}{Florida International University}{April 2017 - Feb 2020}{\begin{cvitems}
+\item Assisted during the administration of evidence based asessment e.g., exposure therapy and treatment to chldren and adolescents with anxiety and depression threshhold and sub-threshold disorders.
+\item Organization of clinical case files for youth and adolescents that come into phobia center for anxiety and depression treatment.
+\item Conduct intake phone interviews on potential participants to determine treatment plan for anxitey and depressive disorders (GAD, MDD, SAD etc.)
+\item Assisted in the completion of psychosocial questionnaires during clinical interview as well as administer computer based tasks such as Flanket test for executive functions.
+\item Participated in data capture for diagnostic code of children and parents with anxiety dirsorder that meet criteria for DSM-5 related disorders for different time points (pre, post, and follow-up.)
+\item Assist, recruit, and schedule participansts for incoming projects such as Attention Training (AT-RCT) for social anxiety study that included EEG assessment for participants.
+\end{cvitems}}
+    \cventry{Research Assistant, Primary Investigator: Erica D. Musser, Ph.D.}{ABC-ERICA Lab}{Florida International University}{May 2017 - May 2019}{\begin{cvitems}
+\item Participate in FIU's Summer Treatment Program (STP) in collboration with ABCDERICA Lab to collect physiological data (e.g., heart rate electrodermal activity) from school ages children with ADHD and comorbid disorders.
+\item Set up Mindware/BioLab electrodes on youth during assessment of ADHD and Emo meds protocol
+\item Run and conduct ADHD protocol task such as: resting baseline, neutral picture assessment, COIN, BARTLG to compare control vs. ADHD diagnosis group.
+\item Perform video transcripts of youth during Emotional and Parenting in Childhood (EPIC) Study conducted by Rachel Tenenbaum, Doctoral student.
+\item Conduct data cleaning procedures on heart rate variability (HRV) cardiac impedance (IMP) and electrodermal activity (EDA) measurements on Mindware software using participant data.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{professional-experience}{%
+\section{Professional Experience}\label{professional-experience}}
+
+\begin{cventries}
+    \cventry{Mathematics Department}{Part Time Lab Instructor/Advisor}{Miami Dade College}{Febuary 2019 - October 2020}{\begin{cvitems}
+\item Serve as a role model to motivate students to achieve their academic needs. 
+  \begin{itemize}
+     \item Advisement service.
+     \item SMART Plan creation.
+     \item Advising appointments.
+     \item Meeting with students on repeated attempts.
+     \item Assist with enrollment. 
+     \item Create, review, and modify student academic progress (MAP) for newly enrolled, transfer and transient students. 
+     \item Assist students with academic planners such as major changes and pre-requisit requirements. 
+     \item Particiate in recruitment services such as orientation for First time in College (FTIC) students 
+     \item Advise and guide students who were on academic probation to implament alternative courses of action to achieve   graudation. 
+  \end{itemize}
+\end{cvitems}}
+    \cventry{Mathematics Department}{Part Time Mathematics Tutor}{Miami Dade College}{October 2016 - January 2019}{\begin{cvitems}
+\item Provide homework help, assist in the creation of study plans, and develope an indepth knowledge in College Mathematics.
+  \begin{itemize}
+     \item Attend instructor meetings or requires yearly training for online courses.
+     \item Grade and score day one diagnostics exam to identify students current mathematics background
+     \item Help in the Navigation of online modalities for students such as ALEKS, myMathLab, and BlackBoard
+     \item Create study plan for students identified as at risk based on students day one diagnoistics exam. 
+     \item Monitor online BlackBoard Retention Center and communicate weekly with professor.
+     \item Conduct Mastery sessions (e.g., review sessions) during tutoring service hours in preparation for exam week.
+  \end{itemize}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{language-skills}{%
+\section{Language Skills}\label{language-skills}}
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{ll>{\raggedright\arraybackslash}p{27em}}
+\toprule
+Programming & Software & Description\\
+\midrule
+R & Github & Personal Portfolio on R projects worked on through the years\\
+Rstudio & COVID-19 Graduate Project & COVID-19 project during advanced R programing course\\
+Rmarkdown & LateX & ability to ouput html pdf and word documents using Rmarkdown\\
+SAS & SAS 9.4 & SAS Biostatistics student project on the effects of Marijuana, alcohol and nicotine in the YRBSS 2019 survey\\
+STATA & STATA MP17 Citrix & Regression models, correlation matrix, pre-post analysis\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{community-engagement}{%
+\section{Community Engagement}\label{community-engagement}}
+
+\begin{cventries}
+    \cventry{Child Anxiety and Phobia Lab}{The Childrens Trust Expo Recruitment}{MDC Wolfson Campus}{September 2018 - September 2018}{\begin{cvitems}
+\item Recruitor for EMU study and Child Anxiety and Phobia Program.
+  \begin{itemize}
+    \item Offer resources to families to participate in sleep study and anxiety and treatment services at FIU.
+    \item Recruit for EMU study, a sleep study interested in looking at sleep and anxiety using MRI facilities.
+  \end{itemize}
+\end{cvitems}}
+    \cventry{Child Anxiety and Phobia Lab}{Open House and Parent Resource provider}{Miami Heights Elementary}{September 2019 - September 2019}{\begin{cvitems}
+\item Outreach Program Efforts.
+  \begin{itemize}
+    \item Parent resource night outreach program to school age children and parents interested in treatment services.
+    \item Offer CCF resources to parents available in the South Florida Area.
+  \end{itemize}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+Yeguez, C.E., \textbf{Bravo, A.,} Troya, S., Pettit, J.W., (In
+preparation). Are Individuals with ADHD at Risk for Suicide? A
+Systematic Review of Longitudinal Studies.
+
+
+\label{LastPage}~
+\end{document}

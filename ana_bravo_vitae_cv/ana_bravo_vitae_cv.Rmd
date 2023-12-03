@@ -1,0 +1,243 @@
+---
+name: Ana Bravo
+#surname: Bravo
+position: "MPH Biostatistics Student"
+address: "Miami, Florida"
+#phone: +1 22 3333 4444
+www: sunlab.fiu.edu
+email: "anbravo@fiu.edu"
+#twitter: mariecurie
+github: anbrav0
+aboutme: Specialized working with adolescent substance use, biospecimen data collection, R programming, and student education. More specifically, I am interested in looking at different trajectories adolescents take when experimenting with substances and student academic success. 
+linkedin: anabravobiostats
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    keep_tex: true
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(readxl)
+library(here)
+library(kableExtra)
+```
+
+```{r function}
+# install.packages("readxl") uncomment this if you need to install the package
+
+readExcelSheets <- function(filename){
+  # read all sheets in .xlsx 
+  all <- readxl::excel_sheets(filename)
+  
+  # import each sheet into a list using readxl::read_excel
+  list <- lapply(all, function(x) readxl::read_excel(filename, sheet = x))
+  
+  # save sheet name for each sheet (list)
+  names(list) <- all
+  
+  # breaks up list and creates a dataframe for each sheet with df names matching sheet names
+  list2env(list, envir = .GlobalEnv)
+  
+
+}
+```
+
+
+```{r load-excel, include=FALSE}
+filename <- here::here("ana_bravo_vitae_cv", 
+                       "Bravo_vitae_data.xlsx")
+
+readExcelSheets(filename)
+
+#readExcelSheets(here::here("Bravo_vitae_data.xlsx"))
+```
+
+
+# Education
+
+```{r}
+library(tibble)
+education %>% 
+  detailed_entries( what = degree,
+                    when = year,
+                    with = institution,
+                    where = where,
+                    why = details,
+                    .protect = FALSE
+    
+  )
+```
+
+# Research Experience 
+
+```{r}
+research %>% 
+  detailed_entries(
+    what = role,
+    when = dates,
+    with = institution,
+    where = where,
+    why = details,
+    .protect = FALSE
+    
+  )
+```
+
+# Professional Experience 
+
+```{r professional-experience-table, include=FALSE, results='asis'}
+
+Professional_experience <- tribble(
+  ~title, ~department, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~details,
+  
+  "Part Time Lab Instructor/Advisor",
+  "Mathematics Department",
+  "Febuary",
+  2019,
+  "October",
+  2020,
+  "Miami Dade College",
+  "Serve as a role model to motivate students to achieve their academic needs. 
+  \\begin{itemize}
+     \\item Advisement service.
+     \\item SMART Plan creation.
+     \\item Advising appointments.
+     \\item Meeting with students on repeated attempts.
+     \\item Assist with enrollment. 
+     \\item Create, review, and modify student academic progress (MAP) for newly enrolled, transfer and transient students. 
+     \\item Assist students with academic planners such as major changes and pre-requisit requirements. 
+     \\item Particiate in recruitment services such as orientation for First time in College (FTIC) students 
+     \\item Advise and guide students who were on academic probation to implament alternative courses of action to achieve   graudation. 
+  \\end{itemize}",
+  "Part Time Mathematics Tutor", 
+  "Mathematics Department",
+  "October",
+  2016, 
+  "January",
+  2019, 
+  "Miami Dade College",
+  "Provide homework help, assist in the creation of study plans, and develope an indepth knowledge in College Mathematics.
+  \\begin{itemize}
+     \\item Attend instructor meetings or requires yearly training for online courses.
+     \\item Grade and score day one diagnostics exam to identify students current mathematics background
+     \\item Help in the Navigation of online modalities for students such as ALEKS, myMathLab, and BlackBoard
+     \\item Create study plan for students identified as at risk based on students day one diagnoistics exam. 
+     \\item Monitor online BlackBoard Retention Center and communicate weekly with professor.
+     \\item Conduct Mastery sessions (e.g., review sessions) during tutoring service hours in preparation for exam week.
+  \\end{itemize}"
+  )
+
+```
+
+
+```{r profession-experience, results='asis'}
+Professional_experience %>% 
+  detailed_entries(
+    with = title,
+    what = department,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}", .na = ""),
+    where = where,
+    .protect = FALSE
+  )
+
+```
+
+# Language Skills 
+
+```{r skills-tribble, include=FALSE}
+
+#skills_tribble <- tribble(
+  #~Programming, ~Software,
+  #"R",    "Github",
+  #"Rstudio", "COVID-19 Project",
+  #"RMarkdown", "LateX",
+  #"SAS", "SAS on Demand"
+#)
+
+```
+
+
+```{r, include=FALSE}
+#skills_tribble %>% 
+ # kbl() %>% 
+  #kable_classic_2(full_width = FALSE)
+```
+
+```{r skills}
+`skills ` %>% 
+  kable(booktabs = TRUE, format = "latex") %>% 
+  kable_styling(full_width = FALSE, position = "center", latex_options = "hold_position") %>% 
+  column_spec(3, width = "27em")
+
+```
+
+# Community Engagement 
+
+```{r community-tribble, include=FALSE}
+
+community_tribble <- tribble(
+  ~title, ~department, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~details,
+  
+  "The Childrens Trust Expo Recruitment",
+  "Child Anxiety and Phobia Lab",
+  "September",
+  2018,
+  "September",
+  2018,
+  "MDC Wolfson Campus",
+  "Recruitor for EMU study and Child Anxiety and Phobia Program.
+  \\begin{itemize}
+    \\item Offer resources to families to participate in sleep study and anxiety and treatment services at FIU.
+    \\item Recruit for EMU study, a sleep study interested in looking at sleep and anxiety using MRI facilities.
+  \\end{itemize}",
+  
+  "Open House and Parent Resource provider",
+  "Child Anxiety and Phobia Lab",
+  "September",
+  2019,
+  "September",
+  2019,
+  "Miami Heights Elementary",
+  "Outreach Program Efforts.
+  \\begin{itemize}
+    \\item Parent resource night outreach program to school age children and parents interested in treatment services.
+    \\item Offer CCF resources to parents available in the South Florida Area.
+  \\end{itemize}"
+)
+
+```
+
+
+```{r community-engagement}
+community_tribble %>% 
+  detailed_entries(
+    with = title,
+    what = department,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}", .na = ""),
+    where = where,
+    .protect = FALSE
+  )
+```
+
+
+# Publications
+
+```{r include=FALSE}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
+
+Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies. 
+
+
