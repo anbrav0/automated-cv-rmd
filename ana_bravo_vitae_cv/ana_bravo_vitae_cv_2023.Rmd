@@ -181,7 +181,7 @@ Professional_experience %>%
 
 # Presentations
 
-(WIP)
+(Work in Progress)
 
 # Leadership, Service & Community Engagement  
 
