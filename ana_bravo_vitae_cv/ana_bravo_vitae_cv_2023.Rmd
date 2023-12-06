@@ -202,7 +202,7 @@ community_tribble <- tribble(
   "Apr",
   2025, 
   "Miami-Dade County",
-  "Directors
+  "Director
   \\begin{itemize}
     \\item Board of Directors in nonprofit 501(c)(3) organization tasked to provide resources across      Miami-Dade County for unserved LGBT+ youth.
     \\item Assist in diversity, equity, and inclusion (DEI) informed decision making for non-profit      goals.
@@ -235,14 +235,14 @@ community_tribble <- tribble(
   \\end{itemize}",
   
   
-  "Data Science Conference 2022 Volunteer",
+  "Data Science Conference 2022",
   "DSC US Health 22",
   "Oct",
   2022,
   "Oct",
   2022,
   "FIU Kovens Conference Center",
-  "Data Science conference Volunteer
+  "Data Science Conference Logistics Volunteer
   \\begin{itemize}
     \\item Assist with logist front desk task such as check in, organization of materials.
     \\item Advise DSC attendees location of important events.
@@ -256,37 +256,12 @@ community_tribble <- tribble(
   "Apr",
   2023,
   "ABCD Consortium",
-  "Research Assistant trainee input
+  " Senior Research Assistant
   \\begin{itemize}
     \\item Provide localized insight on the RA groudfloor for the ABCD Study.
     \\item Provide assistance in reformatting script language for the ABCD Semi-structured TLFB interview.
-  \\end{itemize}",
-  
-  "The Childrens Trust Expo Recruitment",
-  "Child Anxiety and Phobia Lab",
-  "Sept",
-  2018,
-  "Sept",
-  2018,
-  "MDC Wolfson Campus",
-  "Recruitor for EMU study and Child Anxiety and Phobia Program.
-  \\begin{itemize}
-    \\item Offer resources to families to participate in sleep study and anxiety and treatment services at FIU.
-    \\item Recruit for EMU study, a sleep study interested in looking at sleep and anxiety using MRI facilities.
-  \\end{itemize}",
-  
-  "Open House and Parent Resource provider",
-  "Child Anxiety and Phobia Lab",
-  "Sept",
-  2019,
-  "Sept",
-  2019,
-  "Miami Heights Elementary",
-  "Outreach Program Efforts.
-  \\begin{itemize}
-    \\item Parent resource night outreach program to school age children and parents interested in treatment services.
-    \\item Offer CCF resources to parents available in the South Florida Area.
   \\end{itemize}"
+ 
 )
 
 ```
