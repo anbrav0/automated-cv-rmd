@@ -6,7 +6,7 @@ address: "University of Miami, Miller School of Medicine"
 #phone: +1 22 3333 4444
 # www: 
 orcid: 0009-0001-0199-3695
-email: "abrav043@fiu.edu"
+email: "axb3199@miami.edu"
 #twitter: 
 github: anbrav0
 aboutme: Specialized in cleaning, modeling, and visualizing data using advanced programming languages such as R, SAS, and STATA.  
@@ -181,7 +181,12 @@ Professional_experience %>%
 
 # Presentations
 
-(Work in Progress)
+```{r}
+
+bibliography_entries("bib/presentations.bib")
+
+```
+
 
 # Leadership, Service & Community Engagement  
 
