@@ -1,1 +1,1 @@
-This repository holds my automated CVs. Feel free to go through the file and provide feedback!
+This repository holds my current CV, that ends with _`2023` and older version that are contained in the `old` folder. Please feel free to provide feedback! 
