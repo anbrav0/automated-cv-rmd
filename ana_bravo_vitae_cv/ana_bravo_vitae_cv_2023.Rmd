@@ -286,7 +286,7 @@ community_tribble %>%
 
 membership <- tribble(
   ~title, ~member, ~startYear, ~endYear, 
-  "American Public Health Association", "Member", 2022, "Present",
+  "American Public Health Association", "Member", 2022, "2024",
   "Florida Public Health Association", "Member", 2022, "Present",
   "International Network for Social Network Analysis", "Member", 2024, "Present"
 )
