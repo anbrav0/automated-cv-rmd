@@ -85,25 +85,38 @@ advanced programming languages such as R, SAS, and STATA.}
 
 
 % Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
 \newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{2em}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
   % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
   \fi
- }%
- {}
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
 \usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \begin{document}
@@ -116,7 +129,7 @@ advanced programming languages such as R, SAS, and STATA.}
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
 \makecvfooter
-  {March 2024}
+  {May 2024}
     {Ana Bravo~~~·~~~Curriculum Vitae}
   {\thepage~ of \pageref{LastPage}~}
 
@@ -128,8 +141,7 @@ advanced programming languages such as R, SAS, and STATA.}
 
 
 
-\hypertarget{education}{%
-\section{Education}\label{education}}
+\section{Education}\label{education}
 
 \begin{cventries}
     \cventry{MPH - Biostatistics}{Florida International University}{Florida, USA}{2023}{}\vspace{-4.0mm}
@@ -137,8 +149,7 @@ advanced programming languages such as R, SAS, and STATA.}
     \cventry{AA - Psychology}{Miami Dade College}{Florida, USA}{2016}{}\vspace{-4.0mm}
 \end{cventries}
 
-\hypertarget{research-experience}{%
-\section{Research Experience}\label{research-experience}}
+\section{Research Experience}\label{research-experience}
 
 \begin{cventries}
     \cventry{Data Scientist I, Primary Investigator: Mariano Kanamori, Ph.D.}{University of Miami Miller School of Medicine}{Department of Public Health}{Aug 2023 - Present}{\begin{cvitems}
@@ -182,8 +193,7 @@ advanced programming languages such as R, SAS, and STATA.}
 \end{cvitems}}
 \end{cventries}
 
-\hypertarget{professional-experience}{%
-\section{Professional Experience}\label{professional-experience}}
+\section{Professional Experience}\label{professional-experience}
 
 \begin{cventries}
     \cventry{Mathematics Department}{Lab Instructor}{Miami Dade College}{Feb 2019 - Oct 2020}{\begin{cvitems}
@@ -213,8 +223,7 @@ advanced programming languages such as R, SAS, and STATA.}
 \end{cvitems}}
 \end{cventries}
 
-\hypertarget{language-skills}{%
-\section{Language Skills}\label{language-skills}}
+\section{Language Skills}\label{language-skills}
 
 \begin{table}[!h]
 \centering
@@ -231,25 +240,25 @@ STATA & STATA MP17 Citrix & Regression models, correlation matrix, pre-post anal
 \end{tabular}
 \end{table}
 
-\hypertarget{presentations}{%
-\section{Presentations}\label{presentations}}
+\section{Presentations}\label{presentations}
 
-\hypertarget{bibliography}{}
-\leavevmode\vadjust pre{\hypertarget{ref-class2}{}}%
+\phantomsection\label{refs-01331850270533ca62d5b1e9c1b931f0}
+\begin{CSLReferences}{0}{0}
+\bibitem[\citeproctext]{ref-class2}
 \CSLLeftMargin{1. }%
 \CSLRightInline{Bravo, A. (2024). \emph{Interpreting data in public
 health}. Florida International University, Robert Stempel College of
 Public Health; Social Work; PHC 6930C - Intergrative Seminar in Public
 Health.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-sunbelt1}{}}%
+\bibitem[\citeproctext]{ref-sunbelt1}
 \CSLLeftMargin{2. }%
 \CSLRightInline{Rodriguez, E., Bravo, A., Skvoretz, J., Cracker, L., \&
 Kanamori, M. (2024). \emph{Exploring PrEP stigma homophily and PrEP
 discussions in latino men who have sex with men in south florida}.
 University of Miami, Miller School of Medicine; Sunbelt 2024.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-sunbelt2}{}}%
+\bibitem[\citeproctext]{ref-sunbelt2}
 \CSLLeftMargin{3. }%
 \CSLRightInline{Cracker, L., Bravo, A., Rodriguez, E., Fallen, S., \&
 Kanamori, M. (2024). \emph{Examination of PrEP use disclosure among
@@ -257,14 +266,14 @@ latino men who have sex with men: Implications for future social network
 interventions to address HIV-related disparities}. University of Miami,
 Miller School of Medicine; Sunbelt 2024.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-CBPR2024}{}}%
+\bibitem[\citeproctext]{ref-CBPR2024}
 \CSLLeftMargin{4. }%
 \CSLRightInline{Bravo, A. (2024). \emph{Social network analysis: Data
-collection instruments for egocentric networks}. University of Miamim
+collection instruments for egocentric networks}. University of Miami
 Miller School of Medicine.
 \href{https://anbrav0.github.io/teaching/}{anbrav0.github.io/teaching/}}
 
-\leavevmode\vadjust pre{\hypertarget{ref-apha1}{}}%
+\bibitem[\citeproctext]{ref-apha1}
 \CSLLeftMargin{5. }%
 \CSLRightInline{Bravo, A., Wang, W., Colon-Burgos, J., Gomez-Estern, B.,
 Behar-Zusman, V., \& Rojas, P. (2023). \emph{Examining sociocultural
@@ -273,7 +282,7 @@ adolescents in south florida}. Florida International University,
 University of Miami; American Public Health Association 2023 Annual
 Meeting and Expo.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-apha2}{}}%
+\bibitem[\citeproctext]{ref-apha2}
 \CSLLeftMargin{6. }%
 \CSLRightInline{Rojas, P., Wang, W., Novoa, O., Colon-Burgos, J.,
 Ravelo, G. J., Sanchez, M., Cano, M. A., Khalona, M., Bravo, A., De La
@@ -283,16 +292,17 @@ participatory randomized clinical trial targetting adult latino men in
 south florida}. Florida International University, University of Miami;
 American Public Health Association 2023 Annual Meeting and Expo.}
 
-\leavevmode\vadjust pre{\hypertarget{ref-class1}{}}%
+\bibitem[\citeproctext]{ref-class1}
 \CSLLeftMargin{7. }%
 \CSLRightInline{Bravo, A. (2023). \emph{Interpreting data for public
-health rsearch, policy, or practice}. Florida International University,
+health research, policy, or practice}. Florida International University,
 Robert Stempel College of Public Health; Social Work; PHC 6930C -
 Intergrative Seminar in Public Health.}
 
-\hypertarget{leadership-service-community-engagement}{%
+\end{CSLReferences}
+
 \section{Leadership, Service \& Community
-Engagement}\label{leadership-service-community-engagement}}
+Engagement}\label{leadership-service-community-engagement}
 
 \begin{cventries}
     \cventry{Protecting LGBTQ+ Underserved Miami-Dade Youth}{Advisor, Board of Directors: PLUMY}{Miami-Dade County}{Apr 2023 - Apr 2025}{\begin{cvitems}
@@ -332,8 +342,7 @@ Engagement}\label{leadership-service-community-engagement}}
 \end{cvitems}}
 \end{cventries}
 
-\hypertarget{professional-membership}{%
-\section{Professional Membership}\label{professional-membership}}
+\section{Professional Membership}\label{professional-membership}
 
 \begin{cventries}
     \cventry{Member}{American Public Health Association}{}{2022 - 2024}{}\vspace{-4.0mm}
@@ -341,16 +350,20 @@ Engagement}\label{leadership-service-community-engagement}}
     \cventry{Member}{International Network for Social Network Analysis}{}{2024 - Present}{}\vspace{-4.0mm}
 \end{cventries}
 
-\hypertarget{publications}{%
-\section{Publications}\label{publications}}
+\section{Publications}\label{publications}
 
-Yeguez, C.E., \textbf{Bravo, A.,} Troya, S., Pettit, J.W., (In
-preparation). Are Individuals with ADHD at Risk for Suicide? A
-Systematic Review of Longitudinal Studies.
-
-\textbf{Bravo, A.,} Wang, W., Rojas, P., (In preparation). Examining
-Sociocultural Factors of Hispanic Stress: A Community Based Repeated
-Measures Study in South Florida among Latinx Adolescents.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Patria, R., \textbf{Bravo, A.,} Wang, W., Colon-Burgos, J.F., Ravelo,
+  G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman, V.
+  (Submitted) Higher Parental Respect is Associated with Lower
+  Acculturation Stress Among Latino Adolescents
+\item
+  Yeguez, C.E., \textbf{Bravo, A.,} Troya, S., Pettit, J.W., (In
+  preparation). Are Individuals with ADHD at Risk for Suicide? A
+  Systematic Review of Longitudinal Studies.
+\end{enumerate}
 
 
 \label{LastPage}~

@@ -22,6 +22,7 @@ always_allow_html: true
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
 library(vitae)
 library(tidyverse)
 library(readxl)
@@ -64,6 +65,7 @@ readExcelSheets(filename)
 
 ```{r}
 library(tibble)
+
 education %>% 
   detailed_entries( what = degree,
                     when = year,
@@ -184,7 +186,7 @@ Professional_experience %>%
 ```{r}
 
 bibliography_entries("bib/presentations.bib") |> 
-  arrange(desc(issued))
+  arrange(desc(issued)) 
 
 ```
 
@@ -314,8 +316,8 @@ bibliography_entries("packages.bib") %>%
   arrange(desc(author$family), issued)
 ```
 
-Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies. 
-
-**Bravo, A.,** Wang, W., Rojas, P., (In preparation). Examining Sociocultural Factors of Hispanic Stress: A Community Based Repeated Measures Study in South Florida among Latinx Adolescents.
 
 
+1. Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman,  V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
+
+2. Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies. 
