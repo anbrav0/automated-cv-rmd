@@ -1,7 +1,7 @@
 ---
 name: Ana Bravo
 #surname: 
-position: "Data Scientist I"
+position: "Biostatistician | Data Scientist I"
 address: "University of Miami, Miller School of Medicine"
 #phone: +1 22 3333 4444
 # www: 
