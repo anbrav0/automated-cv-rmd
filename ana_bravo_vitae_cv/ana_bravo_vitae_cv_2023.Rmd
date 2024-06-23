@@ -160,30 +160,17 @@ Professional_experience %>%
 
 # Language Skills 
 
-```{r skills-tribble, include=FALSE}
 
-#skills_tribble <- tribble(
-  #~Programming, ~Software,
-  #"R",    "Github",
-  #"Rstudio", "COVID-19 Project",
-  #"RMarkdown", "LateX",
-  #"SAS", "SAS on Demand"
-#)
-
-```
-
-```{r, include=FALSE}
-#skills_tribble %>% 
- # kbl() %>% 
-  #kable_classic_2(full_width = FALSE)
-```
-
-```{r skills}
-`skills ` %>% 
-  kable(booktabs = TRUE, format = "latex") %>% 
-  kable_styling(full_width = FALSE, position = "center", latex_options = "hold_position") %>% 
-  column_spec(3, width = "27em")
-
+```{=tex}
+\begin{cvskills}  
+\cvskill    {Software}    {Microsoft Office, SPSS}      
+\cvskill    {Programming Languages}    {R, SAS, STATA, Python, Julia} 
+\cvskill    {Reproducible Report}    {Shiny, Quarto, Markdown/Rmarkdown, LaTeX} \cvskill    {Project Management}    {REDCap}
+\cvskill    {Version Control}    {Git, GitHub}
+\cvskill    {Web Development}    {HTML, CSS, GitHub Pages}
+\cvskill    {Languages}    {Spanish, English}
+\cvskill    {Operating Systems}    {Windows, MacOS, Linux}
+\end{cvskills}
 ```
 
 # Presentations
