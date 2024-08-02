@@ -30,7 +30,6 @@ library(here)
 library(kableExtra)
 ```
 
-
 ```{r function}
 # install.packages("readxl") uncomment this if you need to install the package
 
@@ -51,7 +50,6 @@ readExcelSheets <- function(filename){
 }
 ```
 
-
 ```{r load-excel, include=FALSE}
 filename <- here::here("ana_bravo_vitae_cv", 
                        "Bravo_vitae_data.xlsx")
@@ -60,7 +58,6 @@ readExcelSheets(filename)
 
 #readExcelSheets(here::here("Bravo_vitae_data.xlsx"))
 ```
-
 
 # Education
 
@@ -78,7 +75,7 @@ education %>%
   )
 ```
 
-# Research Experience 
+# Research Experience
 
 ```{r}
 
@@ -94,10 +91,7 @@ research |>
 
 ```
 
-
-
-# Professional Experience 
-
+# Professional Experience
 
 ```{r professional-experience-table, include=FALSE, results='asis'}
 
@@ -144,7 +138,6 @@ Professional_experience <- tribble(
 
 ```
 
-
 ```{r profession-experience, results='asis'}
 Professional_experience %>% 
   detailed_entries(
@@ -158,21 +151,19 @@ Professional_experience %>%
 
 ```
 
-# Language Skills 
-
+# Language Skills
 
 ```{=tex}
 \begin{cvskills}  
-\cvskill    {Software}    {Microsoft Office, SPSS}      
+\cvskill    {Software}    {Microsoft Office, SPSS, ArcGIS}      
 \cvskill    {Programming Languages}    {R, SAS, STATA, Python, Julia} 
-\cvskill    {Reproducible Report}    {Shiny, Quarto, Markdown/Rmarkdown, LaTeX} \cvskill    {Project Management}    {REDCap}
+\cvskill    {Reproducible Report}    {Shiny, Quarto, Markdown/Rmarkdown, LaTeX} \cvskill    {Project Management}    {REDCap, Qualtrics}
 \cvskill    {Version Control}    {Git, GitHub}
 \cvskill    {Web Development}    {HTML, CSS, GitHub Pages}
 \cvskill    {Languages}    {Spanish, English}
 \cvskill    {Operating Systems}    {Windows, MacOS, Linux}
 \end{cvskills}
 ```
-
 # Presentations
 
 ```{r}
@@ -182,8 +173,7 @@ bibliography_entries("bib/presentations.bib") |>
 
 ```
 
-
-# Leadership, Service & Community Engagement  
+# Leadership, Service & Community Engagement
 
 ```{r community-tribble, include=FALSE}
 
@@ -261,7 +251,6 @@ community_tribble <- tribble(
 
 ```
 
-
 ```{r community-engagement}
 community_tribble %>% 
   detailed_entries(
@@ -274,7 +263,7 @@ community_tribble %>%
   )
 ```
 
-# Professional Membership 
+# Professional Membership
 
 ```{r memberships}
 
@@ -286,7 +275,6 @@ membership <- tribble(
 )
 
 ```
-
 
 ```{r memberships_table}
 membership%>%
@@ -308,11 +296,6 @@ bibliography_entries("packages.bib") %>%
   arrange(desc(author$family), issued)
 ```
 
+1.  Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman, V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
 
-
-1. Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman,  V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
-
-2. Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies. 
-
-
-
+2.  Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies.
