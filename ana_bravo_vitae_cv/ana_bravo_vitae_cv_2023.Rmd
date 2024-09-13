@@ -168,7 +168,9 @@ Professional_experience %>%
 
 ```{r}
 
-bibliography_entries("bib/presentations.bib") |> 
+bibliography_entries(
+  file = here::here("ana_bravo_vitae_cv", "bib", "presentations.bib")
+) |> 
   arrange(desc(issued)) 
 
 ```
