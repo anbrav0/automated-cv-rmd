@@ -163,7 +163,9 @@ Professional_experience %>%
 \cvskill    {Languages}    {Spanish, English}
 \cvskill    {Operating Systems}    {Windows, MacOS, Linux}
 \end{cvskills}
+
 ```
+
 # Presentations
 
 ```{r}
@@ -173,6 +175,21 @@ bibliography_entries(
 ) |> 
   arrange(desc(issued)) 
 
+```
+
+
+# Active Projects Contributions
+
+```{=tex}
+\textbf{Project Title:} ÚNETE: Combining Friendship Support Networks and Targeted Messaging from Celebrity Influencers to Reduce Latinx Substance Use Disparities (NIH/NIDA DP1DA058988)
+\begin{itemize}
+  \item \textbf{Timeline} 08/01/2023 - 06/30/2028
+  \item \textbf{Science Team:}  PI: Mariano Kanamori (UM Department of Public Health Sciences). Significant Contributors: Guillermo “Willy” Prado (UM School of Nursing and Health Studies), Ariana Johnson (UM Department of Public Health Sciences), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Laura Forastiere (Yale Biostatistics), Tong Guangyu (Yale Biostatistics), Suzanne Randolph-Cunningham (Professor Emerita of Family Science at University of Maryland)
+  \item \textbf{Community Engagement} MUJER, Open Arms, Rain Makers Florida Media, Ms. Carmel Mulvani (International Celebrity Expert) and Mr. José Gallegos (Latinx Media and Marketing Partner).
+  \item \textbf{Direct Costs} \$3,500,000.00
+  \item \textbf{Total Costs} \$3,714,492
+  \item \textbf{Current Role:} {Lead statistician}
+\end{itemize}
 ```
 
 # Leadership, Service & Community Engagement
