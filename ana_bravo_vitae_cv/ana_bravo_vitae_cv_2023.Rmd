@@ -181,15 +181,73 @@ bibliography_entries(
 # Active Projects Contributions
 
 ```{=tex}
+
 \textbf{Project Title:} ÚNETE: Combining Friendship Support Networks and Targeted Messaging from Celebrity Influencers to Reduce Latinx Substance Use Disparities (NIH/NIDA DP1DA058988)
 \begin{itemize}
-  \item \textbf{Timeline} 08/01/2023 - 06/30/2028
+  \item \textbf{Timeline:}  08/01/2023 - 06/30/2028
   \item \textbf{Science Team:}  PI: Mariano Kanamori (UM Department of Public Health Sciences). Significant Contributors: Guillermo “Willy” Prado (UM School of Nursing and Health Studies), Ariana Johnson (UM Department of Public Health Sciences), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Laura Forastiere (Yale Biostatistics), Tong Guangyu (Yale Biostatistics), Suzanne Randolph-Cunningham (Professor Emerita of Family Science at University of Maryland)
-  \item \textbf{Community Engagement} MUJER, Open Arms, Rain Makers Florida Media, Ms. Carmel Mulvani (International Celebrity Expert) and Mr. José Gallegos (Latinx Media and Marketing Partner).
-  \item \textbf{Direct Costs} \$3,500,000.00
-  \item \textbf{Total Costs} \$3,714,492
-  \item \textbf{Current Role:} {Lead statistician}
+  \item \textbf{Community Engagement:} MUJER, Open Arms, Rain Makers Florida Media, Ms. Carmel Mulvani (International Celebrity Expert) and Mr. José Gallegos (Latinx Media and Marketing Partner).
+  \item \textbf{Direct Costs:} \$3,500,000.00
+  \item \textbf{Total Costs:} \$5,372,500.00
+  \item \textbf{Current Role:} {Statistician}
 \end{itemize}
+
+
+\textbf{Project Title:} {LatiNET: Multilevel Social Network Model to Examine and Address SARS-CoV-2 Misinformation in Low-Income Latinx Communities (NIH/NIMHD R01MD018343)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {09/20/2022-05/31/2027}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Justin Stoler (UM Department of Geography and Sustainable Development), Rosina Cianelli (UM School of Nursing and Health Studies), Joseph Uscinski (UM Department of Political Science), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology)}
+  \item \textbf{Community Engagement:} {MUJER, Open Arms}
+  \item \textbf{Direct Costs:} {\$2,509,329}
+  \item \textbf{Total Costs:} {\$3,714,492}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+
+\textbf{Project Title:} {FINISHING HIV: An EHE Model for Latinos Integrating One-Stop-Shop Prep Services, A Social Network Support Program and A National Pharmacy Chain (NIH/NIAIDS R01AI169643)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {06/23/2022-05/31/2027}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Susanne Doblecki-Lewis (UM Division of Infectious Diseases), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Adrienn Borsika Rabin (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science), Laramie Rae Smith (UC San Diego, Department of Medicine), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments)}
+  \item \textbf{Community Engagement:} {Latinos Salud, CVS Health®}
+  \item \textbf{Direct Costs:} {\$2,742,005}
+  \item \textbf{Total Costs:} {\$3,546,308}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+\textbf{Project Title:} {PrEParados: A Multi-Level Social Network Model to Increase PrEP Enrollment by Latino MSM Self-Identified as Gay, Bisexual or Straight in Miami (NIH/NIMH 1R01MH125727)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {12/2020 - 11/2025 (non-cost extension)}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Susanne Doblecki-Lewis (UM Division of Infectious Diseases), Justin Stoler (UM Department of Geography and Sustainable Development), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Mark Williams (University of Arkansas for the Medical Sciences), Adam Wayne Carrico (FIU, Health Promotion and Disease Prevention), Peter Lindsay Anderson (University of Colorado, School of Pharmacy), John Skvoretz (University of South Florida, Department of Sociology)}
+  \item \textbf{Community Engagement:} {Latinos Salud}
+  \item \textbf{Direct Costs:} {\$1,257,752}
+  \item \textbf{Total Costs:} {\$1,851,208.18}
+  \item \textbf{Current Role:} {Lead Statistician}
+\end{itemize}
+
+
+
+\textbf{Project Title:} {Storytelling For Non-Governmental Organizations: 
+U-LINK's Dissemination, Implementation and Commercialization}
+\begin{itemize}
+  \item \textbf{Timeline:}  {06/2023 to 05/2024}
+  \item \textbf{Science Team:}  {Contact PI: Sanjeev Chatterjee (UM School of Communication). PIs: Mariano Kanamori (UM Department of Public Health Sciences), Jyotika Ramaprasad (UM School of Communication), Scotney Evans (UM School of Education and Human Development)}
+  \item \textbf{Community Engagement:} {MUJER}
+  \item \textbf{Direct Costs:} {\$100,000}
+  \item \textbf{Total Costs:} {\$100,000}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+\textbf{Project Title:} {Test-to-PrEP: A Randomized Hybrid Implementation/Efficacy Trial of a Social Network Strategy to Increase Equitable Reach of HIV Testing and PrEP Information (NIH/NIMH R01MH138190-01)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {09/01/2024 - 06/30/2029}
+  \item \textbf{Science Team:}  {PI: Susanne Doblecki-Lewis (UM Division of Infectious Diseases). Co-Is: Mariano Kanamori (UM Department of Public Health Sciences), Ariana Johnson (UM Department of Public Health Sciences), Kathryn McCollister (UM Department of Public Health Sciences), Adrienn Borsika Rabin (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science), Laramie Rae Smith (UC San Diego, Department of Medicine), Jingingn Zou (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science)}
+  \item \textbf{Community Engagement:} {Prevention 305}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
 ```
 
 # Leadership, Service & Community Engagement
@@ -317,4 +375,5 @@ bibliography_entries("packages.bib") %>%
 
 1.  Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman, V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
 
-2.  Yeguez, C.E., **Bravo, A.,** Troya, S., Pettit, J.W., (In preparation). Are Individuals with ADHD at Risk for Suicide? A Systematic Review of Longitudinal Studies.
+
+
