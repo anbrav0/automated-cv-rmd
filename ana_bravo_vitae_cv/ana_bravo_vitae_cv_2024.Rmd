@@ -1,0 +1,379 @@
+---
+name: Ana Bravo
+#surname: 
+position: "Biostatistician | Data Scientist"
+address: "University of Miami, Miller School of Medicine"
+#phone: +1 22 3333 4444
+# www: 
+orcid: 0009-0001-0199-3695
+email: "axb3199@miami.edu"
+#twitter: 
+github: anbrav0
+aboutme: Specialized in cleaning, modeling, and visualizing data using advanced programming languages such as R, SAS, and STATA.  
+linkedin: anabravobiostats
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    keep_tex: true
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(vitae)
+library(tidyverse)
+library(readxl)
+library(here)
+library(kableExtra)
+```
+
+```{r function}
+# install.packages("readxl") uncomment this if you need to install the package
+
+readExcelSheets <- function(filename){
+  # read all sheets in .xlsx 
+  all <- readxl::excel_sheets(filename)
+  
+  # import each sheet into a list using readxl::read_excel
+  list <- lapply(all, function(x) readxl::read_excel(filename, sheet = x))
+  
+  # save sheet name for each sheet (list)
+  names(list) <- all
+  
+  # breaks up list and creates a dataframe for each sheet with df names matching sheet names
+  list2env(list, envir = .GlobalEnv)
+  
+
+}
+```
+
+```{r load-excel, include=FALSE}
+filename <- here::here("ana_bravo_vitae_cv", 
+                       "Bravo_vitae_data.xlsx")
+
+readExcelSheets(filename)
+
+#readExcelSheets(here::here("Bravo_vitae_data.xlsx"))
+```
+
+# Education
+
+```{r}
+
+
+education %>% 
+  detailed_entries( what = degree,
+                    when = year,
+                    with = institution,
+                    where = where,
+                    why = details,
+                    .protect = FALSE
+    
+  )
+```
+
+# Research Experience
+
+```{r}
+
+research |>  
+  detailed_entries(
+    what = role,
+    when = dates,
+    with = institution,
+    where = where,
+    why = details,
+    .protect = FALSE
+  )
+
+```
+
+# Professional Experience
+
+```{r professional-experience-table, include=FALSE, results='asis'}
+
+Professional_experience <- tribble(
+  ~title, ~department, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~details,
+  
+  "Lab Instructor",
+  "Mathematics Department",
+  "Feb",
+  2019,
+  "Oct",
+  2020,
+  "Miami Dade College",
+  "Serve as a role model to motivate students to achieve their academic needs. 
+  \\begin{itemize}
+     \\item Advisement service.
+     \\item SMART Plan creation.
+     \\item Advising appointments.
+     \\item Meeting with students on repeated attempts.
+     \\item Assist with enrollment. 
+     \\item Create, review, and modify student academic progress (MAP) for newly enrolled, transfer and transient students. 
+     \\item Assist students with academic planners such as major changes and pre-requsite requirements. 
+     \\item Participate in recruitment services such as orientation for First time in College (FTIC) students 
+     \\item Advice and guide students who were on academic probation to implement alternative courses of action to achieve graduation. 
+  \\end{itemize}",
+  
+  "Mathematics Tutor", 
+  "Mathematics Department",
+  "Oct",
+  2016, 
+  "Jan",
+  2019, 
+  "Miami Dade College",
+  "Provide homework help, assist in the creation of study plans, and develop an in-depth knowledge in College Mathematics.
+  \\begin{itemize}
+     \\item Attend instructor meetings or requires yearly training for online courses.
+     \\item Grade and score day one diagnostics exam to identify students current mathematics background
+     \\item Help in the Navigation of online modalities for students such as ALEKS, myMathLab, and BlackBoard
+     \\item Create study plan for students identified as at risk based on students day one diagnostics exam. 
+     \\item Monitor online BlackBoard Retention Center and communicate weekly with professor.
+     \\item Conduct Mastery sessions (e.g., review sessions) during tutoring service hours in preparation for exam week.
+  \\end{itemize}"
+  )
+
+```
+
+```{r profession-experience, results='asis'}
+Professional_experience %>% 
+  detailed_entries(
+    with = title,
+    what = department,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}", .na = ""),
+    where = where,
+    .protect = FALSE
+  )
+
+```
+
+# Language Skills
+
+```{=tex}
+\begin{cvskills}  
+\cvskill    {Software}    {Microsoft Office, SPSS, ArcGIS}      
+\cvskill    {Programming Languages}    {R, SAS, STATA, Python, Julia} 
+\cvskill    {Reproducible Report}    {Shiny, Quarto, Markdown/Rmarkdown, LaTeX} \cvskill    {Project Management}    {REDCap, Qualtrics}
+\cvskill    {Version Control}    {Git, GitHub}
+\cvskill    {Web Development}    {HTML, CSS, GitHub Pages}
+\cvskill    {Languages}    {Spanish, English}
+\cvskill    {Operating Systems}    {Windows, MacOS, Linux}
+\end{cvskills}
+
+```
+
+# Presentations
+
+```{r}
+
+bibliography_entries(
+  file = here::here("ana_bravo_vitae_cv", "bib", "presentations.bib")
+) |> 
+  arrange(desc(issued)) 
+
+```
+
+
+# Active Projects Contributions
+
+```{=tex}
+
+\textbf{Project Title:} ÚNETE: Combining Friendship Support Networks and Targeted Messaging from Celebrity Influencers to Reduce Latinx Substance Use Disparities (NIH/NIDA DP1DA058988)
+\begin{itemize}
+  \item \textbf{Timeline:}  08/01/2023 - 06/30/2028
+  \item \textbf{Science Team:}  PI: Mariano Kanamori (UM Department of Public Health Sciences). Significant Contributors: Guillermo “Willy” Prado (UM School of Nursing and Health Studies), Ariana Johnson (UM Department of Public Health Sciences), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Laura Forastiere (Yale Biostatistics), Tong Guangyu (Yale Biostatistics), Suzanne Randolph-Cunningham (Professor Emerita of Family Science at University of Maryland)
+  \item \textbf{Community Engagement:} MUJER, Open Arms, Rain Makers Florida Media, Ms. Carmel Mulvani (International Celebrity Expert) and Mr. José Gallegos (Latinx Media and Marketing Partner).
+  \item \textbf{Direct Costs:} \$3,500,000.00
+  \item \textbf{Total Costs:} \$5,372,500.00
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+\textbf{Project Title:} {LatiNET: Multilevel Social Network Model to Examine and Address SARS-CoV-2 Misinformation in Low-Income Latinx Communities (NIH/NIMHD R01MD018343)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {09/20/2022-05/31/2027}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Justin Stoler (UM Department of Geography and Sustainable Development), Rosina Cianelli (UM School of Nursing and Health Studies), Joseph Uscinski (UM Department of Political Science), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology)}
+  \item \textbf{Community Engagement:} {MUJER, Open Arms}
+  \item \textbf{Direct Costs:} {\$2,509,329}
+  \item \textbf{Total Costs:} {\$3,714,492}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+
+\textbf{Project Title:} {FINISHING HIV: An EHE Model for Latinos Integrating One-Stop-Shop Prep Services, A Social Network Support Program and A National Pharmacy Chain (NIH/NIAIDS R01AI169643)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {06/23/2022-05/31/2027}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Susanne Doblecki-Lewis (UM Division of Infectious Diseases), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Adrienn Borsika Rabin (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science), Laramie Rae Smith (UC San Diego, Department of Medicine), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments)}
+  \item \textbf{Community Engagement:} {Latinos Salud, CVS Health®}
+  \item \textbf{Direct Costs:} {\$2,742,005}
+  \item \textbf{Total Costs:} {\$3,546,308}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+\textbf{Project Title:} {PrEParados: A Multi-Level Social Network Model to Increase PrEP Enrollment by Latino MSM Self-Identified as Gay, Bisexual or Straight in Miami (NIH/NIMH 1R01MH125727)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {12/2020 - 11/2025 (non-cost extension)}
+  \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Susanne Doblecki-Lewis (UM Division of Infectious Diseases), Justin Stoler (UM Department of Geography and Sustainable Development), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Mark Williams (University of Arkansas for the Medical Sciences), Adam Wayne Carrico (FIU, Health Promotion and Disease Prevention), Peter Lindsay Anderson (University of Colorado, School of Pharmacy), John Skvoretz (University of South Florida, Department of Sociology)}
+  \item \textbf{Community Engagement:} {Latinos Salud}
+  \item \textbf{Direct Costs:} {\$1,257,752}
+  \item \textbf{Total Costs:} {\$1,851,208.18}
+  \item \textbf{Current Role:} {Lead Statistician}
+\end{itemize}
+
+
+
+\textbf{Project Title:} {Storytelling For Non-Governmental Organizations: 
+U-LINK's Dissemination, Implementation and Commercialization}
+\begin{itemize}
+  \item \textbf{Timeline:}  {06/2023 to 05/2024}
+  \item \textbf{Science Team:}  {Contact PI: Sanjeev Chatterjee (UM School of Communication). PIs: Mariano Kanamori (UM Department of Public Health Sciences), Jyotika Ramaprasad (UM School of Communication), Scotney Evans (UM School of Education and Human Development)}
+  \item \textbf{Community Engagement:} {MUJER}
+  \item \textbf{Direct Costs:} {\$100,000}
+  \item \textbf{Total Costs:} {\$100,000}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+
+\textbf{Project Title:} {Test-to-PrEP: A Randomized Hybrid Implementation/Efficacy Trial of a Social Network Strategy to Increase Equitable Reach of HIV Testing and PrEP Information (NIH/NIMH R01MH138190-01)}
+\begin{itemize}
+  \item \textbf{Timeline:}  {09/01/2024 - 06/30/2029}
+  \item \textbf{Science Team:}  {PI: Susanne Doblecki-Lewis (UM Division of Infectious Diseases). Co-Is: Mariano Kanamori (UM Department of Public Health Sciences), Ariana Johnson (UM Department of Public Health Sciences), Kathryn McCollister (UM Department of Public Health Sciences), Adrienn Borsika Rabin (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science), Laramie Rae Smith (UC San Diego, Department of Medicine), Jingingn Zou (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science)}
+  \item \textbf{Community Engagement:} {Prevention 305}
+  \item \textbf{Current Role:} {Statistician}
+\end{itemize}
+
+```
+
+# Leadership, Service & Community Engagement
+
+```{r community-tribble, include=FALSE}
+
+community_tribble <- tribble(
+  ~title, ~department, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~details,
+  
+  "Advisor, Board of Directors: PLUMY",
+  "Protecting LGBTQ+ Underserved Miami-Dade Youth",
+  "Apr",
+  2023,
+  "Apr",
+  2025, 
+  "Miami-Dade County",
+  "Director
+  \\begin{itemize}
+    \\item Board of Directors in nonprofit 501(c)(3) organization tasked to provide resources across      Miami-Dade County for unserved LGBT+ youth.
+    \\item Assist in diversity, equity, and inclusion (DEI) informed decision making for non-profit      goals.
+   \\end{itemize}",
+  
+  "Rentetion Data Core - ABCD Student Rention Workgroup",
+  "ABCD Study",
+  "Apr",
+  2023,
+  "Apr",
+  2024, 
+  "ABCD Study Consortium",
+  "Retention Core Member
+  \\begin{itemize}
+    \\item Assist in the creation of retention efforts ABCD model for at risk participants.
+    \\item Create, clean, and model passive withdraw participatants as well as identify participants at risk of study withdrawl.
+   \\end{itemize}",
+  
+  "Dean Student Advisory Biostatistics Respresentative",
+  "Robert Stempel College of Public Health and Social Work",
+  "Aug",
+  2022,
+  "Aug",
+  2023, 
+  "Office of Student and Alumni Affairs",
+  "Advisor Council Board Memeber
+  \\begin{itemize}
+    \\item Biostatistics Department representative, make recommendation for improvement of departmental needs.
+    \\item Provide knoweldge for key decision making in Biostatistics department.
+  \\end{itemize}",
+  
+  
+  "Data Science Conference 2022",
+  "DSC US Health 22",
+  "Oct",
+  2022,
+  "Oct",
+  2022,
+  "FIU Kovens Conference Center",
+  "Data Science Conference Logistics Volunteer
+  \\begin{itemize}
+    \\item Assist with logist front desk task such as check in, organization of materials.
+    \\item Advise DSC attendees location of important events.
+  \\end{itemize}",
+  
+  
+  "ABCD Study Substance Use Workgroup Member",
+  "ABCD Study",
+  "Jun",
+  2021,
+  "Apr",
+  2023,
+  "ABCD Consortium",
+  " Senior Research Assistant
+  \\begin{itemize}
+    \\item Provide localized insight on the RA groudfloor for the ABCD Study.
+    \\item Provide assistance in reformatting script language for the ABCD Semi-structured TLFB interview.
+  \\end{itemize}"
+ 
+)
+
+```
+
+```{r community-engagement}
+community_tribble %>% 
+  detailed_entries(
+    with = title,
+    what = department,
+    why = details,
+    when = glue::glue("{startMonth} {startYear} - {endMonth} {endYear}", .na = ""),
+    where = where,
+    .protect = FALSE
+  )
+```
+
+# Professional Membership
+
+```{r memberships}
+
+membership <- tribble(
+  ~title, ~member, ~startYear, ~endYear, 
+  "American Public Health Association", "Member", 2022, "2024",
+  "Florida Public Health Association", "Member", 2022, "Present",
+  "International Network for Social Network Analysis", "Member", 2024, "Present"
+)
+
+```
+
+```{r memberships_table}
+membership%>%
+  detailed_entries(
+    with = title,
+    what = member,
+    when = glue::glue("{startYear} - {endYear}",.na = ""),
+    .protect = F
+  )
+```
+
+# Publications
+
+```{r include=FALSE}
+library(dplyr)
+knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+
+bibliography_entries("packages.bib") %>%
+  arrange(desc(author$family), issued)
+```
+
+1.  Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman, V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
+
+
+
