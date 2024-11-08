@@ -9,7 +9,7 @@ orcid: 0009-0001-0199-3695
 email: "axb3199@miami.edu"
 #twitter: 
 github: anbrav0
-aboutme: Specialized in cleaning, modeling, and visualizing data using advanced programming languages such as R, SAS, and STATA.  
+#aboutme: 
 linkedin: anabravobiostats
 headcolor: 414141
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -297,20 +297,6 @@ community_tribble <- tribble(
   \\end{itemize}",
   
   
-  "Data Science Conference 2022",
-  "DSC US Health 22",
-  "Oct",
-  2022,
-  "Oct",
-  2022,
-  "FIU Kovens Conference Center",
-  "Data Science Conference Logistics Volunteer
-  \\begin{itemize}
-    \\item Assist with logist front desk task such as check in, organization of materials.
-    \\item Advise DSC attendees location of important events.
-  \\end{itemize}",
-  
-  
   "ABCD Study Substance Use Workgroup Member",
   "ABCD Study",
   "Jun",
@@ -348,7 +334,8 @@ membership <- tribble(
   ~title, ~member, ~startYear, ~endYear, 
   "American Public Health Association", "Member", 2022, "2024",
   "Florida Public Health Association", "Member", 2022, "Present",
-  "International Network for Social Network Analysis", "Member", 2024, "Present"
+  "International Network for Social Network Analysis", "Member", 2024, "Present",
+  "Society for Prevention Research", "Member", 2024, "Present",
 )
 
 ```
