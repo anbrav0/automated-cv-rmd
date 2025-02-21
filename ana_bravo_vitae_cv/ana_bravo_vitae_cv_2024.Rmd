@@ -360,7 +360,7 @@ bibliography_entries("packages.bib") %>%
   arrange(desc(author$family), issued)
 ```
 
-1.  Patria, R., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Ravelo, G., Castillo, B., Fizer Robinson, M., De La Rosa M., Behar-Zusman, V. (Submitted) Higher Parental Respect is Associated with Lower Acculturation Stress Among Latino Adolescents
+1.  Rojas, P., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Cabrera Tineo, Y.A., Gomez-Estern, B.M., Ravelo, G., Castillo, B., Khalona, M.A., Castillo, J.S., Behar-Zusman, V. (Submitted Feb 2025). Familial and other sociocultural factors associated with acculturative stress among Latino male adolescents. _Scientific Reports._
 
 
 
