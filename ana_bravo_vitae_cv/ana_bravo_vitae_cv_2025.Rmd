@@ -1,7 +1,7 @@
 ---
 name: Ana Bravo
 #surname: 
-position: "Biostatistician | Data Scientist"
+position: "Biostatistician"
 address: "University of Miami, Miller School of Medicine"
 #phone: +1 22 3333 4444
 # www: 
@@ -184,7 +184,7 @@ bibliography_entries(
 
 \textbf{Project Title:} ÚNETE: Combining Friendship Support Networks and Targeted Messaging from Celebrity Influencers to Reduce Latinx Substance Use Disparities (NIH/NIDA DP1DA058988)
 \begin{itemize}
-  \item \textbf{Timeline:}  08/01/2023 - 06/30/2028
+  \item \textbf{Timeline:}  08/01/2023 - 06/30/2025
   \item \textbf{Science Team:}  PI: Mariano Kanamori (UM Department of Public Health Sciences). Significant Contributors: Guillermo “Willy” Prado (UM School of Nursing and Health Studies), Ariana Johnson (UM Department of Public Health Sciences), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Laura Forastiere (Yale Biostatistics), Tong Guangyu (Yale Biostatistics), Suzanne Randolph-Cunningham (Professor Emerita of Family Science at University of Maryland)
   \item \textbf{Community Engagement:} MUJER, Open Arms, Rain Makers Florida Media, Ms. Carmel Mulvani (International Celebrity Expert) and Mr. José Gallegos (Latinx Media and Marketing Partner).
   \item \textbf{Direct Costs:} \$3,500,000.00
@@ -195,7 +195,7 @@ bibliography_entries(
 
 \textbf{Project Title:} {LatiNET: Multilevel Social Network Model to Examine and Address SARS-CoV-2 Misinformation in Low-Income Latinx Communities (NIH/NIMHD R01MD018343)}
 \begin{itemize}
-  \item \textbf{Timeline:}  {09/20/2022-05/31/2027}
+  \item \textbf{Timeline:}  {09/20/2022-04/01/2025}
   \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Justin Stoler (UM Department of Geography and Sustainable Development), Rosina Cianelli (UM School of Nursing and Health Studies), Joseph Uscinski (UM Department of Political Science), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology)}
   \item \textbf{Community Engagement:} {MUJER, Open Arms}
   \item \textbf{Direct Costs:} {\$2,509,329}
@@ -207,7 +207,7 @@ bibliography_entries(
 
 \textbf{Project Title:} {FINISHING HIV: An EHE Model for Latinos Integrating One-Stop-Shop Prep Services, A Social Network Support Program and A National Pharmacy Chain (NIH/NIAIDS R01AI169643)}
 \begin{itemize}
-  \item \textbf{Timeline:}  {06/23/2022-05/31/2027}
+  \item \textbf{Timeline:}  {06/23/2022-04/01/2025}
   \item \textbf{Science Team:}  {PI: Mariano Kanamori (UM Department of Public Health Sciences). Co-Is: Susanne Doblecki-Lewis (UM Division of Infectious Diseases), Kayo Fujimoto (University of Texas Health Science Center at Houston, School of Public Health-Sociology), Adrienn Borsika Rabin (UC San Diego, Herbert Wertheim School of Public Health and Human Longevity Science), Laramie Rae Smith (UC San Diego, Department of Medicine), Donna Spiegelman (Yale Biostatistics and Epidemiology Departments)}
   \item \textbf{Community Engagement:} {Latinos Salud, CVS Health®}
   \item \textbf{Direct Costs:} {\$2,742,005}
