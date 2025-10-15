@@ -362,5 +362,6 @@ bibliography_entries("packages.bib") %>%
 
 1.  Rojas, P., **Bravo, A.,** Wang, W., Colon-Burgos, J.F., Cabrera Tineo, Y.A., Gomez-Estern, B.M., Ravelo, G., Castillo, B., Khalona, M.A., Castillo, J.S., Behar-Zusman, V. (Submitted Feb 2025). Familial and other sociocultural factors associated with acculturative stress among Latino male adolescents. _Scientific Reports._
 
+2. Despres, L., Rodriguez, E., Johnson, A.L., **Bravo, A.,** Vilchez, L., Doblecki-Lewis, S., Fallon, S., & Kanamori, M. (Under Review). Sexual Partner Typologies among Latinx Gay, Bisexual, and Other Men who Have Sex with Men Living in an EHE Priority Jurisdiction: A Multilevel Latent Class Analysis. _Archives of Sexual Behavior._
 
 
