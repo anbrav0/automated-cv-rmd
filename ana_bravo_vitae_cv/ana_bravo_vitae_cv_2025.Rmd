@@ -363,7 +363,7 @@ bibliography_entries("packages.bib") %>%
 
 2. Despres, L., Rodriguez, E., Johnson, A.L., **Bravo, A.,** Vilchez, L., Doblecki-Lewis, S., Fallon, S., & Kanamori, M. (Under Review). Sexual Partner Typologies among Latinx Gay, Bisexual, and Other Men who Have Sex with Men Living in an EHE Priority Jurisdiction: A Multilevel Latent Class Analysis. _Archives of Sexual Behavior._
 
-3. Rodriguez, E., Despres, L., **Bravo, A.,** Johnson, A.L., Vilchez, L., Skvoretz, J.,  & Kanamori, M. (Under Review) The PrEParados Model: A Community-Based Approach to Engaging PrEP-Eligible
+3. Rodriguez, E., Despres, L., **Bravo, A.,** Johnson, A.L., Vilchez, L., Skvoretz, J.,  & Kanamori, M. (In-Press) The PrEParados Model: A Community-Based Approach to Engaging PrEP-Eligible
 Men into HIV Prevention Programs. _American Journal of Public Health._
 
 
